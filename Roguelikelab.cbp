@@ -19,10 +19,9 @@
 				</Compiler>
 				<Linker>
 					<Add library="jpeg" />
-					<Add library="sfml-graphics" />
-					<Add library="sfml-window" />
-					<Add library="sfml-network" />
-					<Add library="sfml-system" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-graphics.so" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-window.so" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-system.so" />
 					<Add directory="/usr/local/lib/" />
 					<Add directory="lib" />
 				</Linker>
@@ -45,12 +44,23 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
+			<Add directory="/usr/local/SFML-2.2/include" />
 		</Compiler>
+		<Linker>
+			<Add library="jpeg" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="/home/scm-studs/t7034151/Documents/roguelike.repo/lib" />
+			<Add directory="/usr/local/SFML-2.2/lib" />
+		</Linker>
+		<Unit filename="include/Dungeon.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/Item.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="include/TileMap.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Dungeon.cpp" />
 		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/Item.cpp" />
 		<Unit filename="src/Player.cpp" />
