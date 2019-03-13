@@ -14,16 +14,15 @@
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="/usr/local/include" />
+					<Add directory="/usr/local/SFML-2.2/include" />
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="jpeg" />
-					<Add library="sfml-graphics" />
-					<Add library="sfml-window" />
-					<Add library="sfml-network" />
-					<Add library="sfml-system" />
-					<Add directory="/usr/local/lib/" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-graphics.so" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-window.so" />
+					<Add library="/usr/local/SFML-2.2/lib/libsfml-system.so" />
+					<Add directory="/usr/local/SFML-2.2/lib" />
 					<Add directory="lib" />
 				</Linker>
 			</Target>
