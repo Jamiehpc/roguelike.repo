@@ -59,6 +59,22 @@ void Game::Run ()
             sf::Event event;
             while (window.pollEvent(event))
             {
+                //Check initiative of all entities
+
+                //loop through all entities in initiative order
+
+                // if entitiy is player await input
+                        //if all players find dungeon exit then reload dungeon generator
+                        //if player dies remove from initiative queue
+                        // player turn over when
+                            //moves
+                            //attacks
+                            //uses item?
+                            //delay??
+
+                //else ai uses state machine to determine action
+
+
                 if (event.type == sf::Event::Closed)
                     window.close();
             }
