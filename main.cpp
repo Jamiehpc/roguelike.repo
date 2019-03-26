@@ -1,14 +1,28 @@
 #include "Game.h"
-#include <stdlib>
+#include "stdlib.h""
+#include "Udp.h"
+//#include <iostream>
 
 
 
-bool gameisRunning{true};
 
 int main()
 {
-    Game game;
-    game.Run();
+   // Game game;
+   // game.Run();
+    Udp echo;
+    int userchoice{0};
+    std::cout << "Please enter: 1 for server, 2 for client" << std::endl;
+    std::cin >> userchoice;
+
+    if (userchoice == 1)
+        echo.runUdpServer(4300);
+
+    if (userchoice == 2)
+        echo.runUdpClient(13000);
+
+
+
 
 
 
